@@ -1,0 +1,31 @@
+@import 'colors';
+
+section.main-content {
+  #day-number {
+    background-color: $light-green;
+    color: $white;
+    padding: 30px 30px;
+    border-radius: 8px;
+    aspect-ratio: 1/1;
+  }
+  p {
+    font-size: 1rem;
+    color: $white;
+  }
+}
+
+// vystylovat komponentu !!!!!
+// pozadie - light-green
+// 6:23
+// text - white
+// zaoblenie rohu - 1rem
+// text - 2.5rem
+// zarovnany v strede
+// text zobrazuje cislo dna
+// na hover nad dnom - tien
+// 6:23
+// aspect-ratio: 1/1;
+// 6:26
+// box-shadow: 0 5px 10px transparentize($black, 0.8);
+// 6:26
+// $black je premenna z _colors tak ho nezabudnite includovat do day.scss
