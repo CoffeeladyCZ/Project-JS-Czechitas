@@ -6,7 +6,6 @@ export class Day extends HTMLElement {
         `;
         this.date = date;
         this.number = date.getDate();
-        this.date.getDay();
         this.querySelector('#day-number').innerText = this.number;
         this.addEventListener('click', this.handleClickEvent);
     }
@@ -31,7 +30,7 @@ export class Day extends HTMLElement {
     }
 
     handleClickEvent() {
-        alert('Dnes je: ' + this.number); 
+        window.showModal();
     }
 }
 

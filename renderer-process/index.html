@@ -5,35 +5,39 @@
         <link rel="stylesheet" type="text/css" href="styles.css">
         <link rel="stylesheet" type="text/css" href="./components/day/day.css">
         <link rel="stylesheet" type="text/css" href="./components/news-article/news-article.css">
-        <link rel="stylesheet" href="text/css" href="components/carousel/carousel.css">
+        <link rel="stylesheet" type="text/css" href="./components/carousel/carousel.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
-        <script type="module" src="./main.js"></script>
-        
     </head>
-
+    
     <body>
-        <!-- <header class="header-news">
-            <div class="header-news__container">
-            </div>
-            <button id="carousel-button-left">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button id="carousel-button-right" class="last">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </header> -->
-        <my-carousel></my-carousel>
+        <app-carousel></app-carousel>
         <section class="main-content">
         </section>
         <footer class="footer">
-
         </footer>
         <button id="open-modal">Open modal</button>
-        <section hidden class="modal-container">
-            <div class="modal-body">
-                XXXXX
-            </div>
-        </section>
+        <template id="modal-template">
+            <section class="modal-container">
+                <div class="modal-body">
+                    <div class="modal-header">
+                        <span>Day Detail</span>
+                        <i id="close-modal" class="fas fa-times"></i>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="modal-contents">
+                        <form id="modal-form">
+                            <label for="isHoliday">Is Holiday</label>
+                            <input id="isHoliday " name="isHoliday" type="checkbox">
+                        </form>
+                    </div>
+                    <modal-action>
+                        <button id="save-button">Save</buttonid>
+                        <button id="cancel-button">Cancel</button>
+                    </modal-action>
+                </div>
+            </section>
+        </template> 
 
+        <script type="module" src="./main.js"></script>
     </body>
 </html>
